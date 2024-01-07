@@ -1,7 +1,7 @@
 # WebTech-GroupAssignment (Online Library) 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi.
 
--- INITIALISE DATABASE (COPYPASTE BELOW, tekan edit file dlu bru copypaste spaya ngam alignment)
+-- INITIALISE DATABASE (COPYPASTE BELOW, tekan edit file dlu atau tekan code bru copypaste spaya ngam alignment)
 -- Create the online_library database
 CREATE DATABASE IF NOT EXISTS online_library;
 

@@ -47,10 +47,6 @@ if (!isset($_SESSION['username'])) {
                     <img src="../assets/profile_icon.png" alt="Profile Icon">
                     <p>User Profile: View and manage your profile information.</p>
                 </a>
-                <a href="borrowed_books.php">
-                    <img src="../assets/borrowed_books_icon.png" alt="Borrowed Books Icon">
-                    <p>Borrowed Books: See the books you've currently borrowed.</p>
-                </a>
                 <a href="return_books.php">
                     <img src="../assets/return_books_icon.png" alt="Return Books Icon">
                     <p>Return Books: Manage the books you're returning.</p>

@@ -99,7 +99,8 @@ mysqli_close($conn);
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="submit" value="Add User"></td>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" value="Add User"></td>
                         </tr>
                     </table>
 

@@ -20,8 +20,8 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $result = mysqli_query($conn, $deleteQuery);
 
     if ($result) {
-        // Redirect 
-        header("Location: admin_manage_bookss.php");
+        // Redirect
+        header("Location: admin_manage_books.php");
         exit();
     } else {
         // Handle the error (e.g., display an error message)

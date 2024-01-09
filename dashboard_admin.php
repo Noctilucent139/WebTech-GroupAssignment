@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
             <!-- Admin Navigation Links -->
             <div class="admin-links">
                 <a href="admin_manage_users.php">
-                    <img src="../assets/user_icon.png" alt="User Icon">
+                    <img src="../assets/profile_icon.png" alt="User Icon">
                     <p>Manage Users: View, edit, and manage user accounts.</p>
                 </a>
                 <a href="admin_manage_books.php">

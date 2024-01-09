@@ -3,11 +3,12 @@
 // Database connection parameters
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "online_library";
+$port = 8889;
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if (!$conn) {

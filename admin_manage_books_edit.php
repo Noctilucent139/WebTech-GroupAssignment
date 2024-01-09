@@ -121,7 +121,8 @@ mysqli_close($conn);
                             <td><input type="text" id="username" name="username" value="<?php echo $username; ?>"></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="submit" value="Update Book"></td>
+                            <td>&nbsp;</td>
+                            <td class="center-align-button"><input type="submit" value="Update Book"></td>
                         </tr>
                     </table>
 

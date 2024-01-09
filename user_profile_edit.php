@@ -1,29 +1,29 @@
 
 <?php
-session_start();
-include("config.php");
+    session_start();
+    include("config.php");
 
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit();
-}
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
 
-$username = $_SESSION['username'];
+    $username = $_SESSION['username'];
 
-// Fetch user details from user_information table
-$userQuery = "SELECT username, fullname, email, password FROM user_information WHERE username = '$username'";
-$userResult = mysqli_query($conn, $userQuery);
+    // Fetch user details from user_information table
+    $userQuery = "SELECT username, fullname, email, password FROM user_information WHERE username = '$username'";
+    $userResult = mysqli_query($conn, $userQuery);
 
-// Check if the query was successful
-if (!$userResult) {
-    die("Error fetching user details: " . mysqli_error($conn));
-}
+    // Check if the query was successful
+    if (!$userResult) {
+        die("Error fetching user details: " . mysqli_error($conn));
+    }
 
-// Fetch the user details as an associative array
-$rowUser = mysqli_fetch_assoc($userResult);
+    // Fetch the user details as an associative array
+    $rowUser = mysqli_fetch_assoc($userResult);
 
-// Close the database connection
-mysqli_close($conn);
+    // Close the database connection
+    mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -49,35 +49,37 @@ mysqli_close($conn);
 
     <!-- Edit Profile Section -->
     <main>
-        <section>
+        <section id="Section">
             <h2>Edit Profile</h2>
-            <!-- Edit Profile Form -->
-            <form action="user_profile_edit_process.php" method="post">
-                <table>
-                    <tr>
-                        <td><label for="username">Username:</label></td>
-                        <td><input type="text" id="username" name="username" value="<?php echo $rowUser['username']; ?>" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="fullname">Fullname:</label></td>
-                        <td><input type="text" id="fullname" name="fullname" value="<?php echo $rowUser['fullname']; ?>" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email:</label></td>
-                        <td><input type="email" id="email" name="email" value="<?php echo $rowUser['email']; ?>" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password">Password:</label></td>
-                        <td><input type="password" id="password" name="password" value="<?php echo $rowUser['password']; ?>" required></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Save Changes"></td>
-                    </tr>
-                </table>
+            <div class="form-container">
+                <form action="user_profile_edit_process.php" method="post">
+                    <table id="table">
+                        <tr>
+                            <td><label for="username">Username:</label></td>
+                            <td><input type="text" id="username" name="username" value="<?php echo $rowUser['username']; ?>" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fullname">Fullname:</label></td>
+                            <td><input type="text" id="fullname" name="fullname" value="<?php echo $rowUser['fullname']; ?>" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" value="<?php echo $rowUser['email']; ?>" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" name="password" value="<?php echo $rowUser['password']; ?>" required></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="center-align-button"><input type="submit" value="Save Changes"></td>
+                        </tr>
+                    </table>
 
-                <!-- Go Back Button -->
-                <a href="user_profile.php" class="back-button">Go Back</a>
-            </form>
+                    <!-- Go Back Button -->
+                    <a href="user_profile.php" class="back-button">Go Back</a>
+                </form>
+            </div>
         </section>
     </main>
 

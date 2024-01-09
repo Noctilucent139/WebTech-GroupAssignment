@@ -55,3 +55,13 @@ VALUES
     ('Book 14', 210, 'Description for Book 14', 0),
     ('Book 15', 250, 'Description for Book 15', 0);
     
+-- Create table contact_form_submissions
+CREATE TABLE contact_form_submissions ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, message TEXT NOT NULL, submission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+=======
+CREATE TABLE contact_form_submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    submission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

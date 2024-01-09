@@ -40,15 +40,15 @@ if (!isset($_SESSION['username'])) {
             <!-- User Navigation Links -->
             <div class="user-links">
                 <a href="book_index.php">
-                    <img src="../assets/book_icon.png" alt="Book Icon">
+                    <img src="assets/book_icon.png" alt="Book Icon">
                     <p>Book Index: Explore the collection and find your next read.</p>
                 </a>
                 <a href="user_profile.php">
-                    <img src="../assets/profile_icon.png" alt="Profile Icon">
+                    <img src="assets/profile_icon.png" alt="Profile Icon">
                     <p>User Profile: View and manage your profile information.</p>
                 </a>
                 <a href="return_books.php">
-                    <img src="../assets/return_books_icon.png" alt="Return Books Icon">
+                    <img src="assets/return_books_icon.png" alt="Return Books Icon">
                     <p>Return Books: Manage the books you're returning.</p>
                 </a>
             </div>

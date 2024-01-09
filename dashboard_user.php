@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])) {
                     <img src="assets/profile_icon.png" alt="Profile Icon">
                     <p>User Profile: View and manage your profile information.</p>
                 </a>
-                <a href="return_books.php">
+                <a href="user_return_books.php">
                     <img src="assets/return_books_icon.png" alt="Return Books Icon">
                     <p>Return Books: Manage the books you're returning.</p>
                 </a>

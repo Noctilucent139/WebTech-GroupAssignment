@@ -81,7 +81,10 @@ include("config.php");
     <a href="admin_manage_users_add.php" class="add-button">Add User</a>
 
     <!-- Style this later idk -->
-    <p>IMPORTANT!! For User State, 1 means admin, while 0 means regular user.</p>
+    <section id="userSection">
+        <p>User State 1 designates an administrative account with elevated privileges.</p>
+        <p>User State 0 represents a standard user account with regular privileges.</p>
+    </section>
 
     <!-- Footer Section -->
     <?php include 'footer.php';?>

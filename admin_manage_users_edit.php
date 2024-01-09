@@ -141,7 +141,8 @@ mysqli_close($conn);
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="submit" value="Update User"></td>
+                        <td>&nbsp;</td>
+                        <td class="center-align-button"><input type="submit" value="Update User"></td>
                     </tr>
                 </table>
             </form>

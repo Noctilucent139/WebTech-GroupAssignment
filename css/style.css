@@ -569,7 +569,7 @@ footer {
 ===========================================*/
 
 #table {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     border-collapse: collapse;
     background-color: rgba(245, 245, 235, 0.8);
     padding-left: 30px;

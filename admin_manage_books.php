@@ -78,8 +78,11 @@ include("config.php");
     <a href="admin_manage_books_add.php" class="add-button">Add Book</a>
 
     <!-- Style this later idk -->
-    <p>IMPORTANT!! For Book State, 0 means it is in the library, 1 means someone borrow then and 2 means it pending borrow.</p>
-
+    <section id="userSection">
+        <p>Book State 0 indicates that the book is available in the library.</p>
+        <p>Book State 1 indicates that the book is currently on loan to a user.</p>
+    </section>
+    
     <!-- Footer Section -->
     <?php include 'footer.php';?>
 

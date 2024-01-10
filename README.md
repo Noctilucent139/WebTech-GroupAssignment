@@ -1,7 +1,45 @@
 # WebTech-GroupAssignment (Online Library) 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi.
 
--- INITIALISE DATABASE (COPYPASTE BELOW, tekan edit file dlu atau tekan code bru copypaste spaya ngam alignment)
+Module
+-----------------------------------------------------------------
+User Authentication
+- login
+- register
+- forgot password
+- logout
+
+Index
+- about us 
+- contact us (with its table for QnA)
+
+Dashboard
+- admin dashboard
+- user dashboard
+
+Admin Manage Users
+- table management (with CRUD, add, edit, delete)
+
+Admin Manage Books
+- table management (with CRUD, add, edit, delete)
+
+Book Library
+- book index 
+- borrow books process
+- check book availability
+
+User Profile
+- proflie page
+- proflie page edit
+
+Return Book
+- return book table
+- return book process
+
+-----------------------------------------------------------------
+
+-- INITIALISE DATABASE 
+-- COPYPASTE BELOW, tekan edit file dlu atau tekan code bru copypaste spaya ngam alignment
 -- Create the online_library database
 CREATE DATABASE IF NOT EXISTS online_library;
 
@@ -55,7 +93,6 @@ VALUES
     ('Book 14', 210, 'Description for Book 14', 0),
     ('Book 15', 250, 'Description for Book 15', 0);
     
-
 -- Create table contact_form_submissions 
 CREATE TABLE contact_form_submissions (
     id INT AUTO_INCREMENT PRIMARY KEY,

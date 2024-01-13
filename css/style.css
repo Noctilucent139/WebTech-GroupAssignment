@@ -49,7 +49,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    height: 310px;  /* Should not be fixed value. Fix this if possible. It should be pegged to the header + nav height. */
+    height: 310px;  /* Should not be fixed value. Fix this if possible. It should be anchored to the header + nav height. */
     z-index: -1;
 }
 

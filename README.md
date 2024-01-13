@@ -1,5 +1,7 @@
 # WebTech-GroupAssignment (Online Library) 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi.
+Insert welcome note here.
+![unnamed](https://github.com/Noctilucent139/WebTech-GroupAssignment/assets/106331743/562afe26-996d-43bd-8a7d-dc3a7d012325)
+
 
 Module
 -----------------------------------------------------------------
